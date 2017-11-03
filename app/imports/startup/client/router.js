@@ -60,6 +60,22 @@ userRoutes.route('/profile', {
   },
 });
 
+export const votePageRouteName = 'Vote_Page';
+userRoutes.route('/vote', {
+  name: votePageRouteName,
+  action() {
+    BlazeLayout.render('User_Layout', { main: votePageRouteName });
+  },
+});
+
+export const nominatePageRouteName = 'Nominate_Page';
+userRoutes.route('/nominate', {
+  name: nominatePageRouteName,
+  action() {
+    BlazeLayout.render('User_Layout', { main: nominatePageRouteName });
+  },
+});
+
 export const filterPageRouteName = 'Filter_Page';
 userRoutes.route('/filter', {
   name: filterPageRouteName,

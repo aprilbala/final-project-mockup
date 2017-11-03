@@ -1,0 +1,166 @@
+<template name="Vote_Page">
+
+  <div class="ui text container segment">
+    <div class="ui dividing header">
+      Vote
+    </div>
+
+    <div class="ui form">
+      <p>Cast your vote for next's months vending machine items.</p>
+      <p>Choose your top five!</p>
+      <p>Encourage your friends to cast their vote too ;)</p>
+
+      <div class="field">
+        <div class="ui three cards">
+
+          <div class="card">
+            <div class="image">
+              <img src="/images/uncrustable.png">
+            </div>
+            <div class="content">
+              <div class="header">Uncrustables</div>
+              <div class="inline field">
+                <div class="ui checkbox">
+                  <input type="checkbox" tabindex="0" class="hidden">
+                  <label>Vote</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="image">
+              <img src="/images/lunchables.jpeg">
+            </div>
+            <div class="content">
+              <div class="header">Lunchables</div>
+              <div class="inline field">
+                <div class="ui checkbox">
+                  <input type="checkbox" tabindex="0" class="hidden">
+                  <label>Vote</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="image">
+              <img src="/images/stringcheese.jpeg">
+            </div>
+            <div class="content">
+              <div class="header">String Cheese</div>
+              <div class="inline field">
+                <div class="ui checkbox">
+                  <input type="checkbox" tabindex="0" class="hidden">
+                  <label>Vote</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="image">
+              <img src="/images/famousamos.jpeg">
+            </div>
+            <div class="content">
+              <div class="header">Famous Amos Cookies</div>
+              <div class="inline field">
+                <div class="ui checkbox">
+                  <input type="checkbox" tabindex="0" class="hidden">
+                  <label>Vote</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="image">
+              <img src="/images/fudgestripes.jpeg">
+            </div>
+            <div class="content">
+              <div class="header">Keebler Fudge Stripes Cookies</div>
+              <div class="inline field">
+                <div class="ui checkbox">
+                  <input type="checkbox" tabindex="0" class="hidden">
+                  <label>Vote</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="image">
+              <img src="/images/hotcheetos.jpeg">
+            </div>
+            <div class="content">
+              <div class="header">Hot Cheetos</div>
+              <div class="inline field">
+                <div class="ui checkbox">
+                  <input type="checkbox" tabindex="0" class="hidden">
+                  <label>Vote</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="image">
+              <img src="/images/kitkat.jpeg">
+            </div>
+            <div class="content">
+              <div class="header">Kit Kat</div>
+              <div class="inline field">
+                <div class="ui checkbox">
+                  <input type="checkbox" tabindex="0" class="hidden">
+                  <label>Vote</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="image">
+              <img src="/images/gummybears.jpeg">
+            </div>
+            <div class="content">
+              <div class="header">Gummy Bears</div>
+              <div class="inline field">
+                <div class="ui checkbox">
+                  <input type="checkbox" tabindex="0" class="hidden">
+                  <label>Vote</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="image">
+              <img src="/images/sourpatch.jpeg">
+            </div>
+            <div class="content">
+              <div class="header">Sour Patch Kids</div>
+              <div class="inline field">
+                <div class="ui checkbox">
+                  <input type="checkbox" tabindex="0" class="hidden">
+                  <label>Vote</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="field">
+        <button class="ui primary button" type="submit">Submit</button>
+        {{#if displaySuccessMessage}}
+        <div class="ui success message">
+          <p>Thanks for participating!</p>
+        </div>
+        {{/if}}
+      </div>
+
+    </div>
+  </div>
+
+</template>

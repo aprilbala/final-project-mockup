@@ -1,0 +1,30 @@
+<template name="Nominate_Page">
+
+  <div class="ui text container segment">
+    <div class="ui dividing header">
+      Nominate
+    </div>
+
+    <div class="ui form">
+      <p>Nominate items you want for January vending machine items.</p>
+      <p>Top nominated items will be included in the monthly vote.</p>
+
+      <div class="field">
+
+
+      </div>
+
+      <div class="field">
+        <button class="ui primary button" type="submit">Submit</button>
+        {{#if displaySuccessMessage}}
+        <div class="ui success message">
+          <p>Thanks for participating!</p>
+        </div>
+        {{/if}}
+      </div>
+
+    </div>
+  </div>
+
+
+</template>
