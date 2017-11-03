@@ -17,13 +17,15 @@
       {{> TextArea_Form_Control label="Bio" value=profile.bio placeholder="Short bio statement here" errorMessage=(fieldError "bio")}}
 
       <div class="field">
-        {{> Text_Form_Control label="Title" placeholder="Student" value=profile.title errorMessage=(fieldError "title")}}
+        {{> Text_Form_Control label="Title" placeholder="Student / Professor / Faculty / Staff / Vendor / Other" value=profile.title errorMessage=(fieldError "title")}}
         {{> Text_Form_Control label="Picture" placeholder="http://foo.com/shot.jpg" value=profile.picture errorMessage=(fieldError "picture")}}
       </div>
 
       <div class="field">
         {{> Select_Form_Control label="Snack Preferences" options=interests errorMessage=(fieldError "interests") multiple=true }}
       </div>
+
+      {{> Text_Form_Control label="Favorite Snack" placeholder="Sour Patch Kids" value=profile.lastName errorMessage=(fieldError "lastName")}}
 
       <button class="ui primary button" type="submit">Submit</button>
       {{#if displaySuccessMessage}}
